@@ -34,6 +34,14 @@ import * as UniversalImportExport from './ImportExport/ImportExportExample';
 import CRUDMenu from './CRUDOperation/CRUDMenu';
 import CRUDRouterHome from './CRUDOperation/CRUDRouterHome';
 
+import { MovieProvider } from './Hooks/useContext/MovieContext';
+import MovieList from './Hooks/useContext/MovieList';
+import AddMovie from './Hooks/useContext/AddMovie';
+import Movie from './Hooks/useContext/Movie';
+import Nav from './Hooks/useContext/Nav';
+
+import UseReducerHook from './Hooks/useReducerHook';
+
 function App() {
   return (
     <>
@@ -62,10 +70,24 @@ function App() {
     {/* <UniversalImportExport></UniversalImportExport> */}
     {/* <UniversalImportExport.default></UniversalImportExport.default> */}
     
-    <BrowserRouter>
+    {/* <BrowserRouter>
         <CRUDMenu></CRUDMenu>
         <CRUDRouterHome></CRUDRouterHome>
-    </BrowserRouter>
+    </BrowserRouter> */}
+
+    <h2>Hooks</h2>
+    <MovieProvider>
+      {/* <h3>useContext() Hook</h3>       */}
+      {/* <Nav></Nav> */}
+      {/* <AddMovie></AddMovie> */}
+      {/* <MovieList></MovieList>            */}
+    </MovieProvider>
+
+    <h3>useReducer() Hook</h3>
+    <UseReducerHook></UseReducerHook>
+
+
+
     </>
   );
     // <div className="App">
