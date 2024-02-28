@@ -42,6 +42,9 @@ import Nav from './Hooks/useContext/Nav';
 
 import UseReducerHook from './Hooks/useReducerHook';
 
+// import UseMemoAndUseCallbackHook from './Hooks/UseMemoAndUseCallbackHook';
+import UseRefHook from "./Hooks/UseRefHook";
+
 function App() {
   return (
     <>
@@ -83,10 +86,14 @@ function App() {
       {/* <MovieList></MovieList>            */}
     </MovieProvider>
 
-    <h3>useReducer() Hook</h3>
-    <UseReducerHook></UseReducerHook>
+    {/* <h3>useReducer() Hook</h3> */}
+    {/* <UseReducerHook></UseReducerHook> */}
 
+    {/* <h3>useMemo() & useCallback Hook</h3> */}
+    {/* <UseMemoAndUseCallbackHook></UseMemoAndUseCallbackHook> */}
 
+    <h3>useRef() Hook</h3>
+    <UseRefHook></UseRefHook>
 
     </>
   );
