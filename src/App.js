@@ -45,6 +45,8 @@ import UseReducerHook from './Hooks/useReducerHook';
 // import UseMemoAndUseCallbackHook from './Hooks/UseMemoAndUseCallbackHook';
 import UseRefHook from "./Hooks/UseRefHook";
 
+import SimpleFormValidation from './FormValidation/SimpleFormValidation';
+
 function App() {
   return (
     <>
@@ -78,7 +80,7 @@ function App() {
         <CRUDRouterHome></CRUDRouterHome>
     </BrowserRouter> */}
 
-    <h2>Hooks</h2>
+    {/* <h2>Hooks</h2> */}
     <MovieProvider>
       {/* <h3>useContext() Hook</h3>       */}
       {/* <Nav></Nav> */}
@@ -92,8 +94,11 @@ function App() {
     {/* <h3>useMemo() & useCallback Hook</h3> */}
     {/* <UseMemoAndUseCallbackHook></UseMemoAndUseCallbackHook> */}
 
-    <h3>useRef() Hook</h3>
-    <UseRefHook></UseRefHook>
+    {/* <h3>useRef() Hook</h3> */}
+    {/* <UseRefHook></UseRefHook> */}
+
+    <h3>Simple Form Validation</h3>
+    <SimpleFormValidation></SimpleFormValidation>
 
     </>
   );
